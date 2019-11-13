@@ -1,0 +1,903 @@
+/*63561265*/
+@import 'night/mermaid.dark.css';
+@import 'night/codeblock.dark.css';
+@import 'night/sourcemode.dark.css';
+:root {
+  --bg-color: #363b40;
+  --side-bar-bg-color: #2e3033;
+  --text-color: #b8bfc6;
+  --item-hover-bg-color: #0a0d16;
+  --control-text-color: #b7b7b7;
+  --control-text-hover-color: #eee;
+  --window-border: 1px dashed #9b9b9b;
+  --active-file-bg-color: #222222;
+  --active-file-border-color: #8d8df0;
+  --primary-color: #a3d5fe;
+  --active-file-text-color: white;
+  --item-hover-bg-color: #70717d;
+  --item-hover-text-color: white;
+  --primary-color: #6dc1e7;
+}
+html {
+  font-size: 16px;
+}
+html,
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: #363b40;
+  background: var(--bg-color);
+  fill: currentColor;
+}
+html body div .mainarticle {
+  background: #363b40;
+}
+html body div article.article {
+  /** quick open **/
+  /** UI for electron */
+  /** focus mode */
+  /*diagrams*/
+  /*diagrams*/
+  background: rgba(0, 0, 0, 0);
+}
+html body div article.article pre {
+  background: #333 !important;
+  padding: 12px;
+}
+html body div article.article pre code {
+  color: #b8bfc6;
+  background: rgba(0, 0, 0, 0);
+}
+html body div article.article p,
+html body div article.article li {
+  color: white;
+}
+html body div article.article .hljs {
+  display: block;
+  background: white;
+  padding: 0.5em;
+  color: #333333;
+  overflow-x: auto;
+}
+html body div article.article span.hljs-meta {
+  color: #969896;
+}
+html body div article.article .hljs-comment {
+  color: #da924a !important;
+}
+html body div article.article .hljs-number {
+  color: #64ab8f;
+}
+html body div article.article .hljs-string,
+html body div article.article .hljs-variable,
+html body div article.article .hljs-template-variable,
+html body div article.article .hljs-strong,
+html body div article.article .hljs-emphasis,
+html body div article.article .hljs-quote {
+  color: #d26b6b;
+}
+html body div article.article .hljs-keyword,
+html body div article.article .hljs-selector-tag,
+html body div article.article .hljs-type {
+  color: #c88fd0;
+}
+html body div article.article .hljs-literal,
+html body div article.article .hljs-symbol,
+html body div article.article .hljs-bullet,
+html body div article.article .hljs-attribute {
+  color: #0086b3;
+}
+html body div article.article span.hljs-section,
+html body div article.article span.hljs-name {
+  color: #7df46a !important;
+}
+html body div article.article .hljs-tag {
+  color: #997;
+}
+html body div article.article .hljs-title,
+html body div article.article .hljs-attr,
+html body div article.article .hljs-selector-id,
+html body div article.article .hljs-selector-class,
+html body div article.article .hljs-selector-attr,
+html body div article.article .hljs-selector-pseudo {
+  color: #8d8df0;
+}
+html body div article.article .hljs-addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+html body div article.article .hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+html body div article.article .hljs-link {
+  text-decoration: underline;
+}
+html body div article.article #write {
+  max-width: 914px;
+  padding-top: 20px;
+}
+html body div article.article html,
+html body div article.article body,
+html body div article.article button,
+html body div article.article input,
+html body div article.article select,
+html body div article.article textarea,
+html body div article.article div.code-tooltip-content {
+  color: #b8bfc6;
+}
+html body div article.article div.code-tooltip,
+html body div article.article .md-hover-tip .md-arrow:after {
+  background: #4b535a;
+}
+html body div article.article .popover.bottom > .arrow:after {
+  border-bottom-color: #4b535a;
+}
+html body div article.article html,
+html body div article.article body,
+html body div article.article button,
+html body div article.article input,
+html body div article.article select,
+html body div article.article textarea {
+  font-style: normal;
+  line-height: 1.625rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+html body div article.article hr {
+  height: 2px;
+  border: 0;
+  margin: 50px 0 !important;
+}
+html body div article.article h1,
+html body div article.article h2,
+html body div article.article h3,
+html body div article.article h4,
+html body div article.article h5,
+html body div article.article h6 {
+  font-family: 'Lucida Grande', 'Corbel', sans-serif;
+  font-weight: normal;
+  clear: both;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  color: #dedede;
+}
+html body div article.article h1 {
+  font-size: 2.5rem;
+  /* 36px */
+  line-height: 2.75rem;
+  /* 40px */
+  margin-bottom: 1.5rem;
+  /* 24px */
+  letter-spacing: -1.5px;
+}
+html body div article.article h2 {
+  font-size: 1.63rem;
+  /* 24px */
+  line-height: 1.875rem;
+  /* 30px */
+  margin-bottom: 1.5rem;
+  /* 24px */
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+html body div article.article h3 {
+  font-size: 1.17rem;
+  /* 18px */
+  line-height: 1.5rem;
+  /* 24px */
+  margin-bottom: 1.5rem;
+  /* 24px */
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+html body div article.article h4 {
+  font-size: 1.12rem;
+  /* 16px */
+  line-height: 1.375rem;
+  /* 22px */
+  margin-bottom: 1.5rem;
+  /* 24px */
+  color: white;
+}
+html body div article.article h5 {
+  font-size: 0.97rem;
+  /* 16px */
+  line-height: 1.25rem;
+  /* 22px */
+  margin-bottom: 1.5rem;
+  /* 24px */
+  font-weight: bold;
+}
+html body div article.article h6 {
+  font-size: 0.93rem;
+  /* 16px */
+  line-height: 1rem;
+  /* 16px */
+  margin-bottom: 0.75rem;
+  color: white;
+}
+@media (min-width: 980px) {
+  html body div article.article h3.md-focus:before,
+  html body div article.article h4.md-focus:before,
+  html body div article.article h5.md-focus:before,
+  html body div article.article h6.md-focus:before {
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    position: absolute;
+    left: -1.64285714rem;
+    top: 0.35714286rem;
+    float: left;
+    font-size: 9px;
+    padding-left: 2px;
+    padding-right: 2px;
+    vertical-align: bottom;
+    font-weight: normal;
+    line-height: normal;
+  }
+  html body div article.article h3.md-focus:before {
+    content: 'h3';
+  }
+  html body div article.article h4.md-focus:before {
+    content: 'h4';
+  }
+  html body div article.article h5.md-focus:before {
+    content: 'h5';
+    top: 0px;
+  }
+  html body div article.article h6.md-focus:before {
+    content: 'h6';
+    top: 0px;
+  }
+}
+html body div article.article a {
+  text-decoration: none;
+  outline: 0;
+}
+html body div article.article a:hover {
+  outline: 0;
+}
+html body div article.article a:focus {
+  outline: thin dotted;
+}
+html body div article.article sup.md-footnote {
+  background-color: #555;
+  color: #ddd;
+}
+html body div article.article p {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+html body div article.article p,
+html body div article.article ul,
+html body div article.article dd,
+html body div article.article ol,
+html body div article.article hr,
+html body div article.article address,
+html body div article.article pre,
+html body div article.article table,
+html body div article.article iframe,
+html body div article.article .wp-caption,
+html body div article.article .wp-audio-shortcode,
+html body div article.article .wp-video-shortcode {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  /* 24px */
+}
+html body div article.article audio:not([controls]) {
+  display: none;
+}
+html body div article.article [hidden] {
+  display: none;
+}
+html body div article.article ::-moz-selection {
+  background: #4a89dc;
+  color: #fff;
+  text-shadow: none;
+}
+html body div article.article *.in-text-selection,
+html body div article.article ::selection {
+  background: #4a89dc;
+  color: #fff;
+  text-shadow: none;
+}
+html body div article.article ul,
+html body div article.article ol {
+  padding: 0 0 0 1.875rem;
+  /* 30px */
+}
+html body div article.article ul {
+  list-style: square;
+}
+html body div article.article ol {
+  list-style: decimal;
+}
+html body div article.article ul ul,
+html body div article.article ol ol,
+html body div article.article ul ol,
+html body div article.article ol ul {
+  margin: 0;
+}
+html body div article.article b,
+html body div article.article th,
+html body div article.article dt,
+html body div article.article strong {
+  font-weight: bold;
+}
+html body div article.article i,
+html body div article.article em,
+html body div article.article dfn,
+html body div article.article cite {
+  font-style: italic;
+}
+html body div article.article blockquote {
+  padding-left: 1.875rem;
+  margin: 0 0 1.875rem 1.875rem;
+  border-left: solid 2px #474d54;
+  padding-left: 30px;
+  margin-top: 35px;
+}
+html body div article.article pre,
+html body div article.article code,
+html body div article.article kbd,
+html body div article.article tt,
+html body div article.article var {
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 0.875rem;
+  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+}
+html body div article.article pre.md-fences {
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border: 1px solid;
+}
+html body div article.article .md-fences .code-tooltip {
+  bottom: -3.2em;
+}
+html body div article.article code,
+html body div article.article kbd,
+html body div article.article tt,
+html body div article.article var {
+  padding: 2px 5px;
+}
+html body div article.article table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html body div article.article th,
+html body div article.article td {
+  padding: 5px 10px;
+  vertical-align: top;
+}
+html body div article.article a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+html body div article.article hr {
+  background: #474d54;
+  /* variable */
+}
+html body div article.article #write > *:first-child {
+  margin-top: 40px;
+}
+html body div article.article h1 {
+  margin-top: 2em;
+}
+html body div article.article a {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+html body div article.article a:hover {
+  color: #fff;
+}
+html body div article.article .md-inline-math script {
+  color: #81b1db;
+}
+html body div article.article b,
+html body div article.article th,
+html body div article.article dt,
+html body div article.article strong {
+  color: #dedede;
+  /* variable */
+}
+html body div article.article mark {
+  background: #d3d40e;
+}
+html body div article.article blockquote {
+  color: #9da2a6;
+}
+html body div article.article table a {
+  color: #dedede;
+  /* variable */
+}
+html body div article.article th,
+html body div article.article td {
+  border: solid 1px #474d54;
+  /* variable */
+}
+html body div article.article .task-list {
+  padding-left: 0;
+}
+html body div article.article .md-task-list-item {
+  padding-left: 1.25rem;
+}
+html body div article.article .md-task-list-item > input {
+  top: auto;
+}
+html body div article.article .md-task-list-item > input:before {
+  content: '';
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #b8bfc6;
+  background-color: #363b40;
+  margin-top: -0.4rem;
+}
+html body div article.article .md-task-list-item > input:checked:before,
+html body div article.article .md-task-list-item > input[checked]:before {
+  content: '\221A';
+  /*◘*/
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  color: #dedede;
+}
+html body div article.article .CodeMirror-gutters {
+  background: transparent;
+  border-right: 1px solid transparent;
+}
+html body div article.article .auto-suggest-container {
+  border: 0px;
+  background-color: #525c65;
+}
+html body div article.article #typora-quick-open {
+  background-color: #525c65;
+}
+html body div article.article #typora-quick-open input {
+  background-color: #525c65;
+  border: 0;
+  border-bottom: 1px solid grey;
+}
+html body div article.article .typora-quick-open-item {
+  background-color: inherit;
+  color: inherit;
+}
+html body div article.article .typora-quick-open-item.active {
+  background-color: #4d8bdb;
+  color: white;
+}
+html body div article.article .typora-search-spinner > div {
+  background-color: #fff;
+}
+html body div article.article #write pre.md-meta-block {
+  border-bottom: 1px dashed #ccc;
+  background: transparent;
+  padding-bottom: 0.6em;
+  line-height: 1.6em;
+}
+html body div article.article .btn,
+html body div article.article .btn .btn-default {
+  background: transparent;
+  color: #b8bfc6;
+}
+html body div article.article .md-table-edit {
+  border-top: 1px solid gray;
+  background-color: #363b40;
+}
+html body div article.article .popover-title {
+  background: transparent;
+}
+html body div article.article .md-image > .md-meta {
+  color: #bbbbbb;
+  background: transparent;
+}
+html body div article.article .md-expand.md-image > .md-meta {
+  color: #ddd;
+}
+html body div article.article #write > h3:before,
+html body div article.article #write > h4:before,
+html body div article.article #write > h5:before,
+html body div article.article #write > h6:before {
+  border: none;
+  border-radius: 0px;
+  color: #888;
+  text-decoration: underline;
+  left: -1.4rem;
+  top: 0.2rem;
+}
+html body div article.article #write > h3.md-focus:before {
+  top: 2px;
+}
+html body div article.article #write > h4.md-focus:before {
+  top: 2px;
+}
+html body div article.article .md-toc-item {
+  color: #a8c2dc;
+}
+html body div article.article #write div.md-toc-tooltip {
+  background-color: #363b40;
+}
+html body div article.article .dropdown-menu .btn:hover,
+html body div article.article .dropdown-menu .btn:focus,
+html body div article.article .md-toc .btn:hover,
+html body div article.article .md-toc .btn:focus {
+  color: white;
+  background: black;
+}
+html body div article.article #toc-dropmenu {
+  background: rgba(50, 54, 59, 0.93);
+  border: 1px solid rgba(253, 253, 253, 0.15);
+}
+html body div article.article #toc-dropmenu .divider {
+  background-color: #9b9b9b;
+}
+html body div article.article .outline-expander:before {
+  top: 2px;
+}
+html body div article.article #typora-sidebar {
+  box-shadow: none;
+  border-right: 1px dashed;
+  border-right: none;
+}
+html body div article.article .sidebar-tabs {
+  border-bottom: 0;
+}
+html body div article.article #typora-sidebar:hover .outline-title-wrapper {
+  border-left: 1px dashed;
+}
+html body div article.article .outline-title-wrapper .btn {
+  color: inherit;
+}
+html body div article.article .outline-item:hover {
+  border-color: #363b40;
+  background-color: #363b40;
+  color: white;
+}
+html body div article.article h1.md-focus .md-attr,
+html body div article.article h2.md-focus .md-attr,
+html body div article.article h3.md-focus .md-attr,
+html body div article.article h4.md-focus .md-attr,
+html body div article.article h5.md-focus .md-attr,
+html body div article.article h6.md-focus .md-attr,
+html body div article.article .md-header-span .md-attr {
+  color: #8c8e92;
+  display: inline;
+}
+html body div article.article .md-comment {
+  color: #5a95e3;
+  opacity: 1;
+}
+html body div article.article .md-inline-math g,
+html body div article.article .md-inline-math svg {
+  stroke: #b8bfc6 !important;
+  fill: #b8bfc6 !important;
+}
+html body div article.article [md-inline='inline_math'] {
+  color: #9cb2e9;
+}
+html body div article.article #math-inline-preview .md-arrow:after {
+  background: black;
+}
+html body div article.article .modal-content {
+  background: var(--bg-color);
+  border: 0;
+}
+html body div article.article .modal-title {
+  font-size: 1.5em;
+}
+html body div article.article .modal-content input {
+  background-color: rgba(26, 21, 21, 0.51);
+  color: white;
+}
+html body div article.article .modal-content .input-group-addon {
+  background-color: rgba(0, 0, 0, 0.17);
+  color: white;
+}
+html body div article.article .modal-backdrop {
+  background-color: rgba(174, 174, 174, 0.7);
+}
+html body div article.article .modal-content .btn-primary {
+  border-color: var(--primary-color);
+}
+html body div article.article .md-table-resize-popover {
+  background-color: #4b535a;
+}
+html body div article.article .form-inline .input-group .input-group-addon {
+  color: white;
+}
+html body div article.article #md-searchpanel {
+  border-bottom: 1px dashed grey;
+}
+html body div article.article .context-menu {
+  background-color: #42464a;
+}
+html body div article.article .context-menu.dropdown-menu .divider {
+  background-color: #777777;
+}
+html body div article.article footer {
+  color: inherit;
+}
+@media (max-width: 1000px) {
+  html body div article.article footer {
+    border-top: none;
+  }
+  html body div article.article footer:hover {
+    color: inherit;
+  }
+}
+html
+  body
+  div
+  article.article
+  #file-info-file-path
+  .file-info-field-value:hover {
+  background-color: #555;
+  color: #dedede;
+}
+html body div article.article .megamenu-content,
+html body div article.article .megamenu-opened header {
+  background: var(--bg-color);
+}
+html body div article.article .megamenu-menu-panel h2,
+html body div article.article .megamenu-menu-panel h1,
+html body div article.article .long-btn {
+  color: inherit;
+}
+html body div article.article .megamenu-menu-panel input[type='text'] {
+  background: inherit;
+  border: 0;
+  border-bottom: 1px solid;
+}
+html body div article.article #recent-file-panel-action-btn {
+  background: inherit;
+  border: 1px grey solid;
+}
+html body div article.article .megamenu-menu-panel .btn:hover,
+html body div article.article .megamenu-menu-panel .btn:focus,
+html body div article.article .megamenu-menu-panel .btn.focus {
+  color: white;
+}
+html body div article.article .megamenu-menu-panel .dropdown-menu > li > a {
+  color: inherit;
+  background-color: #2f353a;
+  text-decoration: none;
+}
+html body div article.article .megamenu-menu-panel table td:nth-child(1) {
+  color: inherit;
+  font-weight: bold;
+}
+html
+  body
+  div
+  article.article
+  .megamenu-menu-panel
+  tbody
+  tr:hover
+  td:nth-child(1) {
+  color: white;
+}
+html body div article.article .modal-footer .btn-default,
+html body div article.article .modal-footer .btn-primary,
+html body div article.article .modal-footer .btn-default:not(:hover) {
+  border: 1px solid;
+  border-color: transparent;
+}
+html body div article.article .btn-default:hover,
+html body div article.article .btn-default:focus,
+html body div article.article .btn-default.focus,
+html body div article.article .btn-default:active,
+html body div article.article .btn-default.active,
+html body div article.article .open > .dropdown-toggle.btn-default {
+  color: white;
+  border: 1px solid #ddd;
+  background-color: inherit;
+}
+html body div article.article .modal-header {
+  border-bottom: 0;
+}
+html body div article.article .modal-footer {
+  border-top: 0;
+}
+html body div article.article #recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: transparent !important;
+}
+html
+  body
+  div
+  article.article
+  .megamenu-menu-panel
+  tbody
+  tr:hover
+  td:nth-child(2) {
+  color: inherit;
+}
+html body div article.article .megamenu-menu-panel .btn {
+  border: 1px solid #eee;
+  background: transparent;
+}
+html body div article.article .mouse-hover .toolbar-icon.btn:hover,
+html body div article.article #w-full.mouse-hover,
+html body div article.article #w-pin.mouse-hover {
+  background-color: inherit;
+}
+html body div article.article .typora-node::-webkit-scrollbar {
+  width: 5px;
+}
+html body div article.article .typora-node::-webkit-scrollbar-thumb:vertical {
+  background: rgba(250, 250, 250, 0.3);
+}
+html
+  body
+  div
+  article.article
+  .typora-node::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(250, 250, 250, 0.5);
+}
+html body div article.article #w-unpin {
+  background-color: #4182c4;
+}
+html body div article.article #top-titlebar,
+html body div article.article #top-titlebar * {
+  color: var(--item-hover-text-color);
+}
+html body div article.article .typora-sourceview-on #toggle-sourceview-btn,
+html body div article.article #footer-word-count:hover,
+html body div article.article .show-word-count #footer-word-count {
+  background: #333333;
+}
+html body div article.article #toggle-sourceview-btn:hover {
+  color: #eee;
+  background: #333333;
+}
+html
+  body
+  div
+  article.article
+  .on-focus-mode
+  .md-end-block:not(.md-focus):not(.md-focus-container)
+  * {
+  color: #686868 !important;
+}
+html body div article.article .on-focus-mode .md-end-block:not(.md-focus) img,
+html
+  body
+  div
+  article.article
+  .on-focus-mode
+  .md-task-list-item:not(.md-focus-container)
+  > input {
+  opacity: #686868 !important;
+}
+html body div article.article .on-focus-mode li[cid]:not(.md-focus-container) {
+  color: #686868;
+}
+html
+  body
+  div
+  article.article
+  .on-focus-mode
+  .md-fences.md-focus
+  .CodeMirror-code
+  > *:not(.CodeMirror-activeline)
+  *,
+html
+  body
+  div
+  article.article
+  .on-focus-mode
+  .CodeMirror.cm-s-inner:not(.CodeMirror-focused)
+  * {
+  color: #686868 !important;
+}
+html body div article.article .on-focus-mode .md-focus,
+html body div article.article .on-focus-mode .md-focus-container {
+  color: #fff;
+}
+html
+  body
+  div
+  article.article
+  .on-focus-mode
+  #typora-source
+  .CodeMirror-code
+  > *:not(.CodeMirror-activeline)
+  * {
+  color: #686868 !important;
+}
+html body div article.article #write .md-focus .md-diagram-panel {
+  border: 1px solid #ddd;
+  margin-left: -30px;
+}
+html
+  body
+  div
+  article.article
+  #write.show-fences-line-number
+  .md-focus
+  .md-diagram-panel {
+  margin-left: auto;
+}
+html body div article.article .md-diagram-panel-error {
+  color: #f1908e;
+}
+html body div article.article .active-tab-files #info-panel-tab-file,
+html body div article.article .active-tab-files #info-panel-tab-file:hover,
+html body div article.article .active-tab-outline #info-panel-tab-outline,
+html
+  body
+  div
+  article.article
+  .active-tab-outline
+  #info-panel-tab-outline:hover {
+  color: #eee;
+}
+html body div article.article .sidebar-footer-item:hover,
+html body div article.article .footer-item:hover {
+  background: inherit;
+  color: white;
+}
+html body div article.article .ty-side-sort-btn.active,
+html body div article.article .ty-side-sort-btn:hover,
+html body div article.article .selected-folder-menu-item a:after {
+  color: white;
+}
+html body div article.article #sidebar-files-menu {
+  border: solid 1px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.79);
+  background-color: var(--bg-color);
+}
+html body div article.article .file-list-item {
+  border-bottom: none;
+}
+html body div article.article .file-list-item-summary {
+  opacity: 1;
+}
+html body div article.article .file-list-item.active:first-child {
+  border-top: none;
+}
+html body div article.article .sidebar-footer {
+  border-top: 1px solid #555;
+}
+html body div article.article .file-node-background {
+  height: 32px;
+}
+html body div article.article .file-library-node.active > .file-node-content,
+html body div article.article .file-list-item.active {
+  color: white;
+  color: var(--active-file-text-color);
+}
+html
+  body
+  div
+  article.article
+  .file-library-node.active
+  > .file-node-background {
+  background-color: #222222;
+  background-color: var(--active-file-bg-color);
+}
+html body div article.article .file-list-item.active {
+  background-color: #222222;
+  background-color: var(--active-file-bg-color);
+}
+html body div article.article #ty-tooltip {
+  background-color: black;
+  color: #eee;
+}
+html body div article.article #write {
+  cursor: -webkit-image-set(
+        url('night/cursor.png') 1x,
+        url('night/cursor@2x.png') 2x
+      )
+      8 8,
+    auto;
+}
+html body div article.article .md-task-list-item > input {
+  margin-left: -1.3em;
+  margin-top: calc(1rem - 10px);
+  -webkit-appearance: none;
+}

@@ -1,0 +1,527 @@
+/*63561265*/
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+@include-when-export url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+/* =========== */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PT Serif'), local('PTSerif-Regular'), url(./newsprint/PT_Serif-Web-Regular.ttf);
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: normal;
+  src: local('PT Serif'), local('PTSerif-Italic'), url('./newsprint/PT_Serif-Web-Italic.ttf');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: bold;
+  src: local('PT Serif'), local('PTSerif-Bold'), url('./newsprint/PT_Serif-Web-Bold.ttf');
+}
+@font-face {
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: bold;
+  src: local('PT Serif'), local('PTSerif-BoldItalic'), url('./newsprint/PT_Serif-Web-BoldItalic.ttf');
+}
+:root {
+  --active-file-bg-color: #dadada;
+  --active-file-bg-color: rgba(32, 43, 51, 0.63);
+  --active-file-text-color: white;
+  --bg-color: #f3f2ee;
+  --text-color: #1f0909;
+}
+html {
+  font-size: 16px;
+}
+html,
+body {
+  background-color: #f3f2ee;
+  font-family: 'PT Serif', 'Times New Roman', Times;
+  color: #1f0909;
+  line-height: 1.5em;
+}
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+html body div article.article {
+  /* styles */
+  /* ====== */
+  /* headings */
+  /* links */
+  /* block spacing */
+  /* blockquote */
+  /* lists */
+  /* tables */
+  /* some fixes */
+  /** UI for electron */
+}
+html body div article.article .hljs {
+  display: block;
+  background: white;
+  padding: 0.5em;
+  color: #333333;
+  overflow-x: auto;
+}
+html body div article.article .hljs-comment,
+html body div article.article .hljs-meta {
+  color: #969896;
+}
+html body div article.article .hljs-string,
+html body div article.article .hljs-variable,
+html body div article.article .hljs-template-variable,
+html body div article.article .hljs-strong,
+html body div article.article .hljs-emphasis,
+html body div article.article .hljs-quote {
+  color: #df5000;
+}
+html body div article.article .hljs-keyword,
+html body div article.article .hljs-selector-tag,
+html body div article.article .hljs-type {
+  color: #a71d5d;
+}
+html body div article.article .hljs-literal,
+html body div article.article .hljs-symbol,
+html body div article.article .hljs-bullet,
+html body div article.article .hljs-attribute {
+  color: #0086b3;
+}
+html body div article.article .hljs-section,
+html body div article.article .hljs-name {
+  color: #63a35c;
+}
+html body div article.article .hljs-tag {
+  color: #333333;
+}
+html body div article.article .hljs-title,
+html body div article.article .hljs-attr,
+html body div article.article .hljs-selector-id,
+html body div article.article .hljs-selector-class,
+html body div article.article .hljs-selector-attr,
+html body div article.article .hljs-selector-pseudo {
+  color: #795da3;
+}
+html body div article.article .hljs-addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+html body div article.article .hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+html body div article.article .hljs-link {
+  text-decoration: underline;
+}
+html body div article.article #write {
+  max-width: 40em;
+}
+html body div article.article ol,
+html body div article.article ul {
+  list-style: none;
+}
+html body div article.article blockquote,
+html body div article.article q {
+  quotes: none;
+}
+html body div article.article blockquote:before,
+html body div article.article blockquote:after,
+html body div article.article q:before,
+html body div article.article q:after {
+  content: '';
+  content: none;
+}
+html body div article.article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html body div article.article h1,
+html body div article.article h2,
+html body div article.article h3,
+html body div article.article h4,
+html body div article.article h5,
+html body div article.article h6 {
+  font-weight: bold;
+}
+html body div article.article h1 {
+  font-size: 1.875em;
+  /*30 / 16*/
+  line-height: 1.6em;
+  /* 48 / 30*/
+  margin-top: 2em;
+}
+html body div article.article h2,
+html body div article.article h3 {
+  font-size: 1.3125em;
+  /*21 / 16*/
+  line-height: 1.15;
+  /*24 / 21*/
+  margin-top: 2.285714em;
+  /*48 / 21*/
+  margin-bottom: 1.15em;
+  /*24 / 21*/
+}
+html body div article.article h3 {
+  font-weight: normal;
+}
+html body div article.article h4 {
+  font-size: 1.125em;
+  /*18 / 16*/
+  margin-top: 2.67em;
+  /*48 / 18*/
+}
+html body div article.article h5,
+html body div article.article h6 {
+  font-size: 1em;
+  /*16*/
+}
+html body div article.article h1 {
+  border-bottom: 1px solid;
+  margin-bottom: 1.875em;
+  padding-bottom: 0.8125em;
+}
+html body div article.article a {
+  text-decoration: none;
+  color: #065588;
+}
+html body div article.article a:hover,
+html body div article.article a:active {
+  text-decoration: underline;
+}
+html body div article.article p,
+html body div article.article blockquote,
+html body div article.article .md-fences {
+  margin-bottom: 1.5em;
+}
+html body div article.article h1,
+html body div article.article h2,
+html body div article.article h3,
+html body div article.article h4,
+html body div article.article h5,
+html body div article.article h6 {
+  margin-bottom: 1.5em;
+}
+html body div article.article blockquote {
+  font-style: italic;
+  border-left: 5px solid;
+  margin-left: 2em;
+  padding-left: 1em;
+}
+html body div article.article ul,
+html body div article.article ol {
+  margin: 0 0 1.5em 1.5em;
+}
+html body div article.article ol li {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+html body div article.article ul li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+html body div article.article .md-meta,
+html body div article.article .md-before,
+html body div article.article .md-after {
+  color: #999;
+}
+html body div article.article table {
+  margin-bottom: 1.5em;
+  /*24 / 16*/
+  font-size: 1em;
+  /* width: 100%; */
+}
+html body div article.article thead th,
+html body div article.article tfoot th {
+  padding: 0.25em 0.25em 0.25em 0.4em;
+  text-transform: uppercase;
+}
+html body div article.article th {
+  text-align: left;
+}
+html body div article.article td {
+  vertical-align: top;
+  padding: 0.25em 0.25em 0.25em 0.4em;
+}
+html body div article.article code,
+html body div article.article .md-fences {
+  background-color: #dadada;
+  padding-left: 1ch;
+  padding-right: 1ch;
+}
+html body div article.article .md-fences {
+  margin-left: 2em;
+  margin-bottom: 3em;
+}
+html body div article.article .md-fences .CodeMirror.CodeMirror-wrap {
+  top: -0.8em;
+}
+html body div article.article pre,
+html body div article.article code,
+html body div article.article tt {
+  font-size: 0.875em;
+  line-height: 1.714285em;
+}
+html body div article.article h1 {
+  line-height: 1.3em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+html body div article.article p + ul,
+html body div article.article p + ol {
+  margin-top: -1em;
+}
+html body div article.article h3 + ul,
+html body div article.article h4 + ul,
+html body div article.article h5 + ul,
+html body div article.article h6 + ul,
+html body div article.article h3 + ol,
+html body div article.article h4 + ol,
+html body div article.article h5 + ol,
+html body div article.article h6 + ol {
+  margin-top: 0.5em;
+}
+html body div article.article li > ul,
+html body div article.article li > ol {
+  margin-top: inherit;
+}
+html body div article.article h2,
+html body div article.article h3 {
+  margin-bottom: 0.75em;
+}
+html body div article.article hr {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid;
+  border-left: none;
+}
+html body div article.article h1 {
+  border-color: #c5c5c5;
+}
+html body div article.article blockquote {
+  border-color: #bababa;
+  color: #656565;
+}
+html body div article.article thead.md-table-edit {
+  background-color: transparent;
+}
+html body div article.article thead {
+  background-color: #dadada;
+}
+html body div article.article tr:nth-child(even) {
+  background: #e8e7e7;
+}
+html body div article.article hr {
+  border-color: #c5c5c5;
+}
+html body div article.article .task-list {
+  padding-left: 1rem;
+}
+html body div article.article .md-task-list-item {
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+html body div article.article .md-task-list-item > input:before {
+  content: '\221A';
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.6rem;
+  vertical-align: middle;
+  text-align: center;
+  color: #ddd;
+  background-color: #f3f2ee;
+}
+html body div article.article .md-task-list-item > input:checked:before,
+html body div article.article .md-task-list-item > input[checked]:before {
+  color: inherit;
+}
+html body div article.article #write pre.md-meta-block {
+  min-height: 1.875rem;
+  color: #555;
+  border: 0px;
+  background: transparent;
+  margin-top: -4px;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+html body div article.article .md-image > .md-meta {
+  color: #9b5146;
+}
+html body div article.article .md-image > .md-meta {
+  font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}
+html body div article.article #write > h3.md-focus:before {
+  left: -1.5rem;
+  color: #999;
+  border-color: #999;
+}
+html body div article.article #write > h4.md-focus:before {
+  left: -1.5rem;
+  top: 0.25rem;
+  color: #999;
+  border-color: #999;
+}
+html body div article.article #write > h5.md-focus:before {
+  left: -1.5rem;
+  top: 0.3125rem;
+  color: #999;
+  border-color: #999;
+}
+html body div article.article #write > h6.md-focus:before {
+  left: -1.5rem;
+  top: 0.3125rem;
+  color: #999;
+  border-color: #999;
+}
+html body div article.article .md-toc:focus .md-toc-content {
+  margin-top: 19px;
+}
+html body div article.article .md-toc-content:empty:before {
+  color: #065588;
+}
+html body div article.article .md-toc-item {
+  color: #065588;
+}
+html body div article.article #write div.md-toc-tooltip {
+  background-color: #f3f2ee;
+}
+html body div article.article #typora-sidebar {
+  background-color: #f3f2ee;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+html body div article.article .pin-outline #typora-sidebar {
+  background: inherit;
+  box-shadow: none;
+  border-right: 1px dashed;
+}
+html body div article.article .pin-outline #typora-sidebar:hover .outline-title-wrapper {
+  border-left: 1px dashed;
+}
+html body div article.article .outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+html body div article.article .typora-node .outline-item:hover {
+  border-right: 28px solid #dadada;
+}
+html body div article.article .outline-expander:before {
+  content: '\f0da';
+  font-family: FontAwesome;
+  font-size: 14px;
+  top: 1px;
+}
+html body div article.article .outline-expander:hover:before,
+html body div article.article .outline-item-open > .outline-item > .outline-expander:before {
+  content: '\f0d7';
+}
+html body div article.article .modal-content {
+  background-color: #f3f2ee;
+}
+html body div article.article .auto-suggest-container ul li {
+  list-style-type: none;
+}
+html body div article.article .megamenu-menu,
+html body div article.article #top-titlebar,
+html body div article.article #top-titlebar *,
+html body div article.article .megamenu-content {
+  background: #f3f2ee;
+  color: #1f0909;
+}
+html body div article.article .megamenu-menu-header {
+  border-bottom: 1px dashed #202b33;
+}
+html body div article.article .megamenu-menu {
+  box-shadow: none;
+  border-right: 1px dashed;
+}
+html body div article.article header,
+html body div article.article .context-menu,
+html body div article.article .megamenu-content,
+html body div article.article footer {
+  font-family: 'PT Serif', 'Times New Roman', Times;
+  color: #1f0909;
+}
+html body div article.article #megamenu-back-btn {
+  color: #1f0909;
+  border-color: #1f0909;
+}
+html body div article.article .megamenu-menu-header #megamenu-menu-header-title:before {
+  color: #1f0909;
+}
+html body div article.article .megamenu-menu-list li a:hover,
+html body div article.article .megamenu-menu-list li a.active {
+  color: inherit;
+  background-color: #e8e7df;
+}
+html body div article.article .long-btn:hover {
+  background-color: #e8e7df;
+}
+html body div article.article #recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: transparent !important;
+}
+html body div article.article .megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+  color: inherit;
+}
+html body div article.article .megamenu-menu-panel .btn {
+  background-color: #d2d1d1;
+}
+html body div article.article .btn-default {
+  background-color: transparent;
+}
+html body div article.article .typora-sourceview-on #toggle-sourceview-btn,
+html body div article.article .show-word-count #footer-word-count {
+  background: #c7c5c5;
+}
+html body div article.article #typora-quick-open {
+  background-color: inherit;
+}
+html body div article.article .md-diagram-panel {
+  margin-left: -1ch;
+  margin-top: 24px;
+}
+html body div article.article .file-list-item-file-name {
+  font-weight: initial;
+}
+html body div article.article .file-list-item-summary {
+  opacity: 1;
+}
+html body div article.article .file-list-item {
+  color: #777;
+}
+html body div article.article .file-list-item.active {
+  background-color: inherit;
+  color: black;
+}
+html body div article.article .ty-side-sort-btn.active {
+  background-color: inherit;
+}
+html body div article.article .file-list-item.active .file-list-item-file-name {
+  font-weight: bold;
+}
+html body div article.article .file-list-item {
+  opacity: 1 !important;
+}
+html body div article.article .file-library-node.active > .file-node-background {
+  background-color: rgba(32, 43, 51, 0.63);
+  background-color: var(--active-file-bg-color);
+}
+html body div article.article .file-tree-node.active > .file-node-content {
+  color: white;
+  color: var(--active-file-text-color);
+}
+html body div article.article .md-task-list-item > input {
+  margin-left: -1.6em;
+  margin-top: calc(1rem - 12px);
+}

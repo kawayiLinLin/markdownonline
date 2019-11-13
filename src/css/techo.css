@@ -1,0 +1,648 @@
+@charset "utf-8";
+/* techo-typora style */
+:root {
+  --active-file-bg-color: #dadada;
+  --active-file-bg-color: rgba(32, 43, 51, 0.63);
+  --active-file-text-color: white;
+  --bg-color: #f9f5ed;
+  --text-color: #6e4832;
+  --side-bar-bg-color: #f5f5f5;
+  --control-text-color: #666;
+  --primary-color: #6e4832;
+}
+html {
+  color: #6e4832;
+  background: #f9f5ed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
+  font-size: 16px;
+  -webkit-font-smoothing: initial;
+}
+body,
+code {
+  color: #6e4832;
+  background: #f9f5ed;
+}
+div.mainarticle.col-md-8 {
+  background-color: #f9f5ed;
+}
+html body article.article {
+  /* input mode  */
+  /* meta - message - block */
+  /* clear margin and padding */
+  /* img 添加边框 */
+  /* a border bottom styles */
+  /* mark */
+  /* 段落之间的间隔 */
+  /* 在文章中的 ul 和 ol 的样式 */
+  /* Responsive images */
+  /* 角标颜色 */
+  /* checked box 效果 */
+}
+html body article.article img {
+  max-width: 100%;
+}
+html body article.article content {
+  background: #f9f5ed;
+}
+html body article.article pre {
+  border: 1px solid #ddd;
+  padding: 1em 0.5em;
+  font-size: 0.9rem;
+}
+html body article.article th,
+html body article.article table tr th,
+html body article.article table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+html body article.article table {
+  margin-bottom: 10px;
+}
+html body article.article code {
+  font-weight: 100;
+}
+html body article.article li {
+  margin-top: 6px;
+}
+html body article.article #write {
+  max-width: 960px;
+  padding-top: 2em;
+  padding-left: 60px;
+  padding-right: 60px;
+  min-height: calc(100vh - 6em);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+html body article.article .typora-node {
+  min-height: calc(100% - 6em);
+}
+html body article.article pre {
+  border: 1px solid #ddd;
+  padding: 1em 0.5em;
+  font-size: 0.9rem;
+}
+html body article.article code {
+  font-weight: 100;
+}
+html body article.article .hljs {
+  display: block;
+  background: white;
+  padding: 0.5em;
+  color: #333333;
+  overflow-x: auto;
+}
+html body article.article .hljs-comment,
+html body article.article .hljs-meta {
+  color: #969896;
+}
+html body article.article .hljs-string,
+html body article.article .hljs-variable,
+html body article.article .hljs-template-variable,
+html body article.article .hljs-strong,
+html body article.article .hljs-emphasis,
+html body article.article .hljs-quote {
+  color: #df5000;
+}
+html body article.article .hljs-keyword,
+html body article.article .hljs-selector-tag,
+html body article.article .hljs-type {
+  color: #a71d5d;
+}
+html body article.article .hljs-literal,
+html body article.article .hljs-symbol,
+html body article.article .hljs-bullet,
+html body article.article .hljs-attribute {
+  color: #0086b3;
+}
+html body article.article .hljs-section,
+html body article.article .hljs-name {
+  color: #63a35c;
+}
+html body article.article .hljs-tag {
+  color: #333333;
+}
+html body article.article .hljs-title,
+html body article.article .hljs-attr,
+html body article.article .hljs-selector-id,
+html body article.article .hljs-selector-class,
+html body article.article .hljs-selector-attr,
+html body article.article .hljs-selector-pseudo {
+  color: #795da3;
+}
+html body article.article .hljs-addition {
+  color: #55a532;
+  background-color: #eaffea;
+}
+html body article.article .hljs-deletion {
+  color: #bd2c00;
+  background-color: #ffecec;
+}
+html body article.article .hljs-link {
+  text-decoration: underline;
+}
+html body article.article pre.md-meta-block {
+  color: rgba(146, 115, 91, 0.81);
+  padding: 1em;
+  border-radius: 2px;
+  font-size: 14px;
+  background: rgba(251, 246, 222, 0.5);
+}
+@media screen and (max-width: 800px) {
+  html body article.article html {
+    font-size: 14px;
+  }
+  html body article.article #write {
+    padding-left: 30px;
+    background: #f9f5ed;
+    padding-right: 30px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  html body article.article {
+    /* paper outline */
+  }
+  html body article.article body,
+  html body article.article #footer-word-count-info {
+    background: #f5f5f5;
+  }
+  html body article.article body.pin-outline,
+  html body article.article .pin-outline #footer-word-count-info,
+  html body article.article .pin-outline footer {
+    background: #f9f5ed;
+  }
+  html body article.article article {
+    max-width: 1000px;
+    padding: 40px 60px;
+    background: #f9f5ed;
+    margin: 3em auto 3em;
+  }
+  html body article.article .pin-outline article {
+    max-width: 1000px;
+    background: #f9f5ed;
+    margin: 0 0 0;
+    border: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  html body article.article footer {
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 1300px) {
+  html body article.article body.pin-outline,
+  html body article.article .pin-outline #footer-word-count-info,
+  html body article.article .pin-outline footer {
+    background: #f9f5ed;
+  }
+  html body article.article .pin-outline #write {
+    max-width: 1000px;
+    padding: 40px 60px;
+    background: #f9f5ed;
+    margin: 3em auto 3em;
+  }
+  html body article.article .pin-outline footer {
+    background-color: transparent;
+  }
+  html body article.article #footer-word-count-info {
+    background: #f5f5f5;
+  }
+}
+html body article.article body,
+html body article.article dl,
+html body article.article dt,
+html body article.article dd,
+html body article.article ul,
+html body article.article ol,
+html body article.article li,
+html body article.article h1,
+html body article.article h2,
+html body article.article h3,
+html body article.article h4,
+html body article.article h5,
+html body article.article h6,
+html body article.article code,
+html body article.article form,
+html body article.article fieldset,
+html body article.article legend,
+html body article.article input,
+html body article.article textarea,
+html body article.article p,
+html body article.article blockquote,
+html body article.article th,
+html body article.article td,
+html body article.article hr,
+html body article.article button,
+html body article.article article,
+html body article.article aside,
+html body article.article details,
+html body article.article figcaption,
+html body article.article figure,
+html body article.article footer,
+html body article.article header,
+html body article.article menu,
+html body article.article nav,
+html body article.article section {
+  margin: 0;
+  padding: 0;
+}
+html body article.article article,
+html body article.article aside,
+html body article.article details,
+html body article.article figcaption,
+html body article.article figure,
+html body article.article footer,
+html body article.article header,
+html body article.article menu,
+html body article.article nav,
+html body article.article section {
+  display: block;
+}
+html body article.article audio,
+html body article.article canvas,
+html body article.article video {
+  display: inline-block;
+}
+html body article.article body,
+html body article.article button,
+html body article.article input,
+html body article.article select,
+html body article.article textarea {
+  font: 400 1em/1.8 'font/han.otf', 'PingFang SC', 'Lantinghei SC', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+}
+html body article.article body {
+  font-family: 'font/han.otf', 'PingFang SC', 'Lantinghei SC', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+}
+html body article.article h1,
+html body article.article h2,
+html body article.article h3,
+html body article.article h4,
+html body article.article h5,
+html body article.article h6 {
+  font-family: 'font/han.otf', 'PingFang SC', 'Lantinghei SC', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans;
+  /*font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;*/
+  -webkit-font-smoothing: initial;
+  font-weight: 100;
+  color: var(--text-color);
+  line-height: 1.35;
+  font-variant-numeric: lining-nums;
+  margin-bottom: 1em;
+}
+html body article.article em {
+  font-family: 'font/han.otf', Georgia-Italic, STSongti-SC-Light, serif;
+}
+html body article.article strong em,
+html body article.article em strong {
+  font-family: 'font/han.otf', Georgia-BoldItalic, STSongti-SC-Regular, serif;
+}
+html body article.article button::-moz-focus-inner,
+html body article.article input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+html body article.article table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html body article.article fieldset,
+html body article.article img {
+  border: 0;
+}
+html body article.article img {
+  background: white;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  box-shadow: 1px 2px 4px gray;
+  text-align: center;
+}
+html body article.article blockquote {
+  position: relative;
+  color: rgba(146, 115, 91, 0.81);
+  font-weight: 400;
+  border-left: 2px solid #6e4832;
+  padding-left: 1rem;
+  margin: 1em 3em 1em 1em;
+}
+@media only screen and (max-width: 640px) {
+  html body article.article blockquote {
+    margin: 1em 0;
+  }
+}
+html body article.article acronym,
+html body article.article abbr {
+  border-bottom: 1px dotted;
+  font-variant: normal;
+}
+html body article.article abbr {
+  cursor: help;
+}
+html body article.article address,
+html body article.article caption,
+html body article.article cite,
+html body article.article code,
+html body article.article dfn,
+html body article.article th,
+html body article.article var {
+  font-style: normal;
+  font-weight: 400;
+}
+html body article.article ul,
+html body article.article ol {
+  list-style: none;
+}
+html body article.article caption,
+html body article.article th {
+  text-align: left;
+}
+html body article.article q:before,
+html body article.article q:after {
+  content: '';
+}
+html body article.article sub,
+html body article.article sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+html body article.article :root sub,
+html body article.article :root sup {
+  vertical-align: baseline;
+  /* for ie9 and other modern browsers */
+}
+html body article.article sup {
+  top: -0.5em;
+}
+html body article.article sub {
+  bottom: -0.25em;
+}
+html body article.article a {
+  color: #4484c2;
+}
+html body article.article a:hover {
+  text-decoration: underline;
+}
+html body article.article a {
+  font-weight: normal;
+}
+html body article.article a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #4484c2;
+}
+html body article.article ins,
+html body article.article a {
+  text-decoration: none;
+}
+html body article.article mark {
+  background: #fffdd1;
+  border-bottom: 1px solid #ffedce;
+  padding: 2px;
+  margin: 0 5px;
+}
+html body article.article pre,
+html body article.article code,
+html body article.article pre tt {
+  font-family: Courier, 'Courier New', monospace;
+}
+html body article.article .md-fences {
+  border: 1px solid #ddd;
+  padding: 1em 0.5em;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+html body article.article hr {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  margin-bottom: 0.8em;
+  height: 10px;
+}
+html body article.article strong,
+html body article.article b {
+  font-weight: 700;
+  /*color: #000;*/
+}
+html body article.article p,
+html body article.article .md-fences,
+html body article.article ul,
+html body article.article ol,
+html body article.article dl,
+html body article.article form,
+html body article.article hr,
+html body article.article figure,
+html body article.article #write-p,
+html body article.article #write-pre,
+html body article.article #write-ul,
+html body article.article #write-ol,
+html body article.article #write-dl,
+html body article.article #write-form,
+html body article.article #write-hr,
+html body article.article #write-table,
+html body article.article blockquote {
+  margin-bottom: 1.2em;
+}
+html body article.article html {
+  font-family: 'font/han.otf', PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+}
+html body article.article h1,
+html body article.article h2,
+html body article.article h3,
+html body article.article h4,
+html body article.article h5,
+html body article.article h6,
+html body article.article #write-h1,
+html body article.article #write-h2,
+html body article.article #write-h3,
+html body article.article #write-h4,
+html body article.article #write-h5,
+html body article.article #write-h6 {
+  margin-bottom: 0.6em;
+  line-height: 1.35;
+  color: #6e4832;
+  font-weight: bolder;
+}
+html body article.article h1,
+html body article.article #write-h1 {
+  font-size: 2.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 3px double #eee;
+}
+html body article.article h2,
+html body article.article #write-h2 {
+  font-size: 1.8em;
+}
+html body article.article h3,
+html body article.article #write-h3 {
+  font-size: 1.6em;
+}
+html body article.article h4,
+html body article.article #write-h4 {
+  font-size: 1.4em;
+}
+html body article.article h5,
+html body article.article h6,
+html body article.article #write-h5,
+html body article.article #write-h6 {
+  font-size: 1.2em;
+}
+html body article.article ul {
+  margin-left: 1.3em;
+  list-style: disc;
+}
+html body article.article ol {
+  list-style: decimal;
+  margin-left: 1.9em;
+}
+html body article.article li ul,
+html body article.article li ol,
+html body article.article ul,
+html body article.article ol,
+html body article.article ul,
+html body article.article ol {
+  margin-bottom: 0.8em;
+  margin-left: 2em;
+}
+html body article.article li ul,
+html body article.article ul,
+html body article.article ul {
+  list-style: circle;
+}
+html body article.article table > th,
+html body article.article table > td {
+  border: 1px solid #ddd;
+  padding: 0.5em 1em;
+  color: rgba(110, 72, 50, 0.74);
+}
+html body article.article table th,
+html body article.article th {
+  background: #fbfbfb;
+}
+html body article.article table thead th,
+html body article.article thead th {
+  background: rgba(251, 240, 211, 0.76);
+}
+html body article.article table caption {
+  border-bottom: none;
+}
+html body article.article em {
+  font-weight: inherit;
+  font-style: inherit;
+}
+html body article.article li > p {
+  margin-bottom: 0 !important;
+}
+html body article.article img {
+  max-width: 100%;
+}
+html body article.article a.md-toc-inner {
+  border-bottom: 0 !important;
+}
+html body article.article .md-toc-h1:first-of-type:last-of-type {
+  display: none;
+}
+html body article.article .md-toc {
+  font-size: inherit;
+}
+html body article.article .md-toc-h1 .md-toc-inner {
+  font-weight: normal;
+}
+html body article.article .mac-seamless-mode #write {
+  min-height: calc(100vh - 6em - 20px);
+}
+html body article.article .typora-quick-open-item.active {
+  color: var(--active-file-text-color);
+}
+html body article.article *.in-text-selection,
+html body article.article ::selection {
+  background: var(--active-file-bg-color);
+  text-shadow: none;
+  color: white;
+}
+html body article.article .btn-primary {
+  background-color: #2d2d2d;
+  border-color: #020202;
+}
+html body article.article .btn-primary:hover,
+html body article.article .btn-primary:focus,
+html body article.article .btn-primary.focus,
+html body article.article .btn-primary:active,
+html body article.article .btn-primary.active,
+html body article.article .open > .dropdown-toggle.btn-primary {
+  background-color: #4e4c4e;
+  border: #4e4c4e;
+}
+html body article.article #preference-dialog .modal-content {
+  background: #6e757a;
+  --bg-color: #6e757a;
+  --text-color: #f1f1f1;
+  color: #f1f1f1;
+}
+html body article.article sup.md-footnote {
+  color: #6e4832;
+}
+html body article.article .task-list {
+  list-style: none !important;
+}
+html body article.article .task-list-item input {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  -webkit-appearance: initial;
+  left: -18px;
+}
+html body article.article .task-list-item input:focus {
+  outline: none;
+  box-shadow: none;
+}
+html body article.article .task-list-item input:before {
+  border: 2px solid #6e4832;
+  border-radius: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  content: ' ';
+  transition: background-color 200ms ease-in-out;
+  display: block;
+}
+html body article.article .task-list-item input:checked:before,
+html body article.article .task-list-item input[checked]:before {
+  -webkit-appearance: initial;
+  background: #6e4832;
+  border-width: 2px;
+  display: inline-block;
+  transition: background-color 200ms ease-in-out;
+}
+html body article.article .task-list-item input:checked:after,
+html body article.article .task-list-item input[checked]:after {
+  opacity: 1;
+}
+html body article.article .task-list-item input:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.05s ease-in-out;
+  -moz-transition: opacity 0.05s ease-in-out;
+  transition: opacity 0.05s ease-in-out;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0.325rem;
+  left: 0.28125rem;
+  width: 0.6375rem;
+  height: 0.4rem;
+  border: 3px solid #f9f5ed;
+  border-top: 0;
+  border-right: 0;
+  content: ' ';
+  opacity: 0;
+}
+html body article.article .task-list-done {
+  text-decoration: line-through;
+}
+html body article.article .md-grid-board a:hover,
+html body article.article .md-grid-board a.md-active {
+  border-color: #a1a1a1;
+  background: #f9edc5;
+}
+html body article.article .md-grid-board tr[row='1'] a:hover,
+html body article.article .md-grid-board tr[row='1'] a.md-active {
+  background: #5e3e2b;
+}
