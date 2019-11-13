@@ -10,8 +10,7 @@
 
 
 ```shell
-git clone ...
-#暂时还没开源
+https://github.com/kawayiLinLin/markdownonline/
 ```
 
 + 你也可以通过 npm下载转换插件
