@@ -10,7 +10,7 @@
 
 
 ```shell
-git clone ...
+git clone https://github.com/kawayiLinLin/markdownonline/
 #暂时还没开源
 ```
 
@@ -157,7 +157,7 @@ npm install ...
   | <span style="color:#fafafa;background:#6182c7;">#fafafa</span> | <span style="color:#6182c7;">#6182c7</span> |
   | <span style="color:#282c34;">#282c34</span>                    | <span style="color:#98c361;">#98c361</span> |
 
-   **markdown语法块设置：**暂不支持设置
+   **markdown语法块设置：** 暂不支持设置
 
 ## 5.其他
 
