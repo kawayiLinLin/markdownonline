@@ -14,6 +14,17 @@
 git clone https://github.com/kawayiLinLin/markdownonline/
 
 ```
+运行：
+
+```shell
+npm install
+#start the server
+node ./src/server.js
+#或
+npm run server
+#start the Compiler and the http-server
+npm run start
+```
 
 + 你也可以通过 npm下载转换插件
 
@@ -160,7 +171,7 @@ npm install ...
 
    **markdown语法块设置：** 暂不支持设置
 
-## 5.其他
+## 3.其他
 
 本操作说明在此编辑器中编写，本编辑器会持续更新，如果你有什么意见或建议，可以在`1936635053@qq.com`给我留言 <a href="mailto:1936635053@qq.com">发送邮件</a>
 
