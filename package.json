@@ -30,7 +30,7 @@
     "clipboard": "^2.0.4",
     "express": "^4.17.1",
     "highlight.js": "^9.15.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "marked": "^0.7.0"
   }
 }
